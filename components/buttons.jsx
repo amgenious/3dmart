@@ -7,8 +7,10 @@ export const Downbuttons = () => {
   return (
     <div className='rounded-lg bg-opacity-20 bg-white absolute w-full bottom-0  flex justify-evenly items-center'>
         <div className='flex flex-col items-center cursor-pointer hover:shadow-xl p-2'>
+          <Link href='/shopping'>
         <Image src={startcart} width={50} height={50} alt='start-cart'/>
         <p className='text-sm text-slate-500'>Shopping</p>
+          </Link>
         </div>
         <div className='flex flex-col items-center cursor-pointer hover:shadow-xl p-2'>
         <Image src={cart} width={50} height={50} alt='cart'/>
