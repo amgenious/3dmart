@@ -5,8 +5,10 @@ const ItemsDetails = ({item}) => {
     <div>
       {item ? (
         <>
-          <p>ID: {item.id}</p>
           <p>Name: {item.name}</p>
+          <div>
+            <iframe src={item.url} width={500} height={500}></iframe>
+          </div>
         </>
       ) : (
         <p>Select a item to view details</p>
